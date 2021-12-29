@@ -1,0 +1,51 @@
+Famulus:
+is built for linux mint mate
+is dependent on having an internet connection
+
+FIRST STEP: PRINTS AFFIRMATIONS FOR EACH STEP
+download binary somehow
+execute
+
+CHECK FOR INTERNET CONNECTION
+
+TERMINAL && GUI:
+somehow apply the terminal settings
+somehow apply the GUI settings
+
+INSTALLATIONS:
+check for git
+check for golang if not install if not update (tell if you've updated)
+check for rustup if not install
+check for nim if not install
+check for ghc if not install
+check for postgresql if not install
+check for vim if not install -> add atlas theme + custom settings
+check for vscode if not install -> add custom settings.json
+check for nginx if not install
+check node-typescript
+check firefox -> somehow have a file of settings
+
+DIRS: check if exists, if not create
+mkdir src
+mkdir bin
+put bin on path
+
+CLONE COMPILE PLACE: check if exists if not clone
+(rewrite whichever needs rewriting)
+clone lines
+clone links
+clone drones
+clone smoke
+clone trails
+clone onemore
+clone chassis
+
+compile and place binaries in /bin folder
+
+HAVE INFO FOR CERTAIN TOOLS:
+HAVE personal operation commands for those tools available for reading
+-> psql, nginx, systemctl, vim, git, etc.
+
+SELF CONTAINED
+NO CONFIG FILE NO NOTHING
+FORMAT THE HDD ONCE A MONTH
