@@ -1,0 +1,28 @@
+{
+    "window.zoomLevel": 2,
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false,
+    "git.enabled": false,
+    "editor.renderLineHighlight": "none",
+    "editor.matchBrackets": "never",
+
+    "editor.tokenColorCustomizations": {
+        "[CarbonightBlue]": {
+            "strings": "#c0c0c0",
+            "numbers": "#c0c0c0",
+            "comments": "#747452"
+        }
+    },
+
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#747452"
+    }, 
+
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "CarbonightBlue",
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": false
+}

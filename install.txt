@@ -1,0 +1,13 @@
+dependecies:
+  mint mate
+  internet connection
+
+sudo apt -y install git
+
+git clone https://github.com/hilbertshotel/famulus.git
+
+cd famulus
+
+./famulus
+
+y

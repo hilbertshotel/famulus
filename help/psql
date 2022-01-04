@@ -1,0 +1,6 @@
+dir: /etc/postgresql/12/main/
+
+permissions file: pg_hba.conf
+>> change peer to trust for no-password login or md5 for password login
+
+sudo systemctl restart postgresql.service

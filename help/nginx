@@ -1,0 +1,10 @@
+dir: /etc/nginx
+
+check if config is ok: sudo nginx -t
+
+create symlink:
+sudo ln -s /etc/nginx/site-available/mysite.com /etc/nginx/sites-enabled/mysite.com
+
+use systemctl to handle nginx.service:
+
+status, restart, start, stop, reload, whatever...

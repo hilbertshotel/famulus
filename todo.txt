@@ -1,0 +1,31 @@
+famulus install
+famulus backup (backup all important configs)
+famulus help
+famulus test (test if everything works as expected)
+
+CLONE COMPILE PLACE:
+
+cd $HOME
+
+if [ ! -d "$HOME/src/$1" ] ; then
+  git clone https://github.com/hilbertshotel/$1
+  cd $HOME/src/$1
+  go mod tidy
+  go build $1
+  mv $1 $HOME/bin/$1
+fi
+
+(rewrite whichever needs rewriting)
+clone lines - write exclusions
+clone links
+clone drones
+clone smoke
+clone onemore
+clone chassis
+
+
+compile and place binaries in /bin folder
+
+ALARMS -> a tool to send email alarms on certain periods (must run on the server)
+
+BACKUP CONFIGS && FORMAT HDD ONCE A MONTH alarm

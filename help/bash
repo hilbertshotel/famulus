@@ -1,0 +1,6 @@
+ps -A | grep postgres 
+
+chmod 600 .ssh
+chmod +x famulus.sh
+
+printenv
