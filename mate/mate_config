@@ -42,8 +42,20 @@ icon-theme='Mint-Y-Pink'
 [desktop/peripherals/keyboard]
 numlock-state='on'
 
+[desktop/peripherals/keyboard/kbd]
+layouts=['us', 'bg\tphonetic']
+options=['grp\tgrp:win_space_toggle', 'terminate\tterminate:ctrl_alt_bksp', 'grp\tgrp:alt_shift_toggle']
+
+[desktop/peripherals/keyboard/preview]
+height=810
+width=1440
+x=240
+y=135
+
 [desktop/peripherals/mouse]
+accel-profile='default'
 cursor-theme='DMZ-Black'
+motion-acceleration=2.7671232876712328
 
 [desktop/session]
 session-start=1640892152
@@ -159,7 +171,7 @@ expand=true
 orientation='bottom'
 screen=0
 size=43
-y=1007
+y=1037
 y-bottom=0
 
 [power-manager]

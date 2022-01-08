@@ -1,6 +1,12 @@
 #!/bin/bash
 
-CHECK="\x1b[32mok:\x1b[0m"
+L="\x1b[36m=========>\x1b[0m\x1b[32m"
+R="\x1b[0m\x1b[36m<=========\x1b[0m"
+
+print () {
+  echo -e $L $1 $R
+}
+
 DIR="$HOME/famulus"
 
 
@@ -8,18 +14,18 @@ DIR="$HOME/famulus"
 # ==================================================
 
 dconf dump /org/mate/ > $DIR/mate/mate_config
-echo -e CHECK "successful MATE config backup"
+print "successful MATE config backup"
 
 
 # BACKUP VSCODE CONFIGURATION
 # ==================================================
 
 cp $HOME/.config/Code/User/settings.json $DIR/vscode/settings.json
-echo -e CHECK "successful VSCODE config backup"
+print "successful VSCODE config backup"
 
 
 # BACKUP BASH PROFILE
 # ==================================================
 
 cp $HOME/.profile $DIR/bash/.profile
-echo -e $CHECK "successful BASH profile backup"
+print "successful BASH profile backup"
