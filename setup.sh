@@ -16,7 +16,7 @@ DIR="$HOME/famulus"
 # REMOVE SOME DIRECTORIES FROM HOME
 # ==================================================
 
-dir_arr=( "Music" "Pictures" "Documents" "Public" "Videos" "Templates" )
+dir_arr=( "Music" "Pictures" "Documents" "Public" "Videos" "Templates" "Downloads" )
 
 for dir in "${dir_arr[@]}"
 do
@@ -31,8 +31,11 @@ print "useless home directories deleted"
 # CONFIGURE GIT
 # ==================================================
 
+apt -y install git
+
 git config --global user.email "nikolay.kalchev@abv.bg"
 git config --global user.name "Nikolay Kalchev"
+
 print "git configured"
 
 

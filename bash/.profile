@@ -29,3 +29,5 @@ fi
 export PATH="$PATH:~/go/bin"
 export PATH="$PATH:~/.nimble/bin"
 export PATH="$PATH:~/.cargo/env"
+
+alias repo="firefox https://github.com/hilbertshotel/"
