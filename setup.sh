@@ -39,8 +39,7 @@ print "git configured"
 # UPDATE && UPGRADE SYSTEM
 # ==================================================
 
-echo "update system? y/n"
-read input
+read -p "update system? y/n " input
 if [ $input == "y" ] ; then
   apt -y update && apt upgrade
   print "system up to date"
