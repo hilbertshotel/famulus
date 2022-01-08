@@ -17,8 +17,6 @@ fi
 
 (rewrite whichever needs rewriting)
 clone lines - write exclusions
-clone links
-clone drones
 clone smoke
 clone onemore
 clone chassis
@@ -27,5 +25,7 @@ clone chassis
 compile and place binaries in /bin folder
 
 ALARMS -> a tool to send email alarms on certain periods (must run on the server)
+
+HOMEPAGE (127.0.0.1) with google search bar, duckduckgo searchbar + personal bookmarks
 
 BACKUP CONFIGS && FORMAT HDD ONCE A MONTH alarm

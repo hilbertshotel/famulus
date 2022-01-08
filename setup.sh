@@ -13,11 +13,27 @@ print () {
 DIR="$HOME/famulus"
 
 
-# HANDLE THIS SHIT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# git config --global user.email "nikolay.kalchev@abv.bg"
-# git config --global user.name "Nikolay Kalchev"
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# REMOVE SOME DIRECTORIES FROM HOME
+# ==================================================
+
+dir_arr=( "Music" "Pictures" "Documents" "Public" "Videos" "Templates" )
+
+for dir in "${dir_arr[@]}"
+do
+  path="$HOME/$dir"
+  if [ -d "$path" ] ; then
+    rmdir $path
+  fi
+done
+print "useless home directories deleted"
+
+
+# CONFIGURE GIT
+# ==================================================
+
+git config --global user.email "nikolay.kalchev@abv.bg"
+git config --global user.name "Nikolay Kalchev"
+print "git configured"
 
 
 # UPDATE && UPGRADE SYSTEM
@@ -150,27 +166,27 @@ print "~/src/ directory created"
 # CLONE AND COMPILE TOOLS
 # ==================================================
 
-clone () {
-  if [ ! -d "${src}/$1" ] ; then
-    git clone https://github.com/hilbertshotel/$1
-    cd $src/$1
-  fi
-}
+# clone () {
+#   if [ ! -d "${src}/$1" ] ; then
+#     git clone https://github.com/hilbertshotel/$1
+#     cd $src/$1
+#   fi
+# }
 
-src = "$HOME/src"
-cd $src
-
-
-if [ ! -d "${src}/lines" ] ; then
-  git clone https://github.com/hilbertshotel/lines
-  cd $HOME/src/$1
-  go mod tidy
-  go build $1
-  mv $1 $HOME/bin/$1
-fi
+# src = "$HOME/src"
+# cd $src
 
 
-ghc -O2 src/Main.hs -o bin/lines -i:src -no-keep-hi-files -no-keep-o-files -XLambdaCase
+# if [ ! -d "${src}/lines" ] ; then
+#   git clone https://github.com/hilbertshotel/lines
+#   cd $HOME/src/$1
+#   go mod tidy
+#   go build $1
+#   mv $1 $HOME/bin/$1
+# fi
+
+
+# ghc -O2 src/Main.hs -o bin/lines -i:src -no-keep-hi-files -no-keep-o-files -XLambdaCase
 
 
 
