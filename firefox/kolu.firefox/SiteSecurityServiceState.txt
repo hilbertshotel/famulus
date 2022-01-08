@@ -1,0 +1,5 @@
+shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	0	19000	1673181957850,1,1,2
+firefox.settings.services.mozilla.com:HSTS	1	19000	1673181954923,1,0,2
+incoming.telemetry.mozilla.org:HSTS	0	19000	1673181953555,1,0,2
+contile.services.mozilla.com:HSTS	1	19000	1673181952739,1,0,2
+location.services.mozilla.com:HSTS	0	19000	1673181953128,1,1,2

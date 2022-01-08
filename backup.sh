@@ -18,15 +18,6 @@ cp $HOME/.config/Code/User/settings.json $DIR/vscode/settings.json
 echo -e CHECK "successful VSCODE config backup"
 
 
-# BACKUP FIREFOX CONFIGURATION
-# ==================================================
-
-firefox_profile="40147x9s.default-release/"
-
-cp -r $HOME/.mozilla/firefox/$firefox_profile $DIR/$firefox_profile
-echo -e $CHECK "successful FIREFOX profile backup"
-
-
 # BACKUP BASH PROFILE
 # ==================================================
 

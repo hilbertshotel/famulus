@@ -2,12 +2,22 @@ dependecies:
   mint mate
   internet connection
 
+start firefox to init .mozilla folder
+
+start terminal
+
 sudo apt -y install git
 
 git clone https://github.com/hilbertshotel/famulus.git
 
 cd famulus
 
-./famulus
+./setup.hs
 
 y
+
+install adblock firefox extension
+
+install carbonightBlue vscode theme
+
+configure .ssh folder

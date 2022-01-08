@@ -3,8 +3,8 @@
 # DATA
 # ==================================================
 
-L="\x1b[34m=========>\x1b[0m\x1b[35m"
-R="\x1b[0m\x1b[34m<=========\x1b[0m"
+L="\x1b[36m=========>\x1b[0m\x1b[32m"
+R="\x1b[0m\x1b[36m<=========\x1b[0m"
 
 print () {
   echo -e $L $1 $R
@@ -64,9 +64,10 @@ print "bash profile configured"
 # CONFIGURE FIREFOX
 # ==================================================
 
-firefox_profile="40147x9s.default-release/"
+cp -r $DIR/firefox/kolu.firefox $HOME/.mozilla/firefox/kolu.firefox
+cp $DIR/firefox/profiles.ini $HOME/.mozilla/firefox/profiles.ini
+cp $DIR/firefox/installs.ini $HOME/.mozilla/firefox/installs.ini
 
-cp -r $DIR/firefox/$firefox_profile $HOME/.mozilla/firefox/$firefox_profile
 print "firefox profile configured"
 
 
@@ -82,8 +83,16 @@ print "vim installed && configured"
 # INSTALL AND CONFIGURE VSCODE
 # ==================================================
 
-apt -y install code
-cp $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
+if [ ! -d "$HOME/.config/Code" ] ; then
+  wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+  apt install $DIR/vscode.deb
+
+  mkdir $HOME/.config/Code/User
+  cp $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
+
+  rm -r $DIR/vscode.deb
+fi
+
 print "vscode installed && configured"
 
 
@@ -189,8 +198,6 @@ print "~/src/ directory created"
 # ghc -O2 src/Main.hs -o bin/lines -i:src -no-keep-hi-files -no-keep-o-files -XLambdaCase
 
 
-
-
-
+source $HOME/.profile
 echo 
 echo -e "\x1b[36mFamulus has finished. Please reboot your system, sire.\x1b[0m"
