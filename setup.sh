@@ -71,6 +71,13 @@ cp $DIR/firefox/installs.ini $HOME/.mozilla/firefox/installs.ini
 print "firefox profile configured"
 
 
+# INSTALL PIP
+# =================================================
+
+apt -y install python3-pip
+print "pip installed"
+
+
 # INSTALL AND CONFIGURE VIM
 # ==================================================
 
