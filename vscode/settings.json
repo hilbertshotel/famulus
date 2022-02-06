@@ -1,28 +1,52 @@
 {
-    "window.zoomLevel": 2,
-    "workbench.statusBar.visible": false,
-    "workbench.activityBar.visible": false,
-    "git.enabled": false,
-    "editor.renderLineHighlight": "none",
-    "editor.matchBrackets": "never",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "git.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "editor.matchBrackets": "never",
+  "editor.tokenColorCustomizations": {
+      "[CarbonightBlue]": {
+          "comments": "#586e75",
+          "strings": "#9fb5b8"
+      }
+  },
 
-    "editor.tokenColorCustomizations": {
-        "[CarbonightBlue]": {
-            "strings": "#c0c0c0",
-            "numbers": "#c0c0c0",
-            "comments": "#747452"
-        }
-    },
+  "workbench.colorCustomizations": {
+      "list.activeSelectionForeground": "#839496", // list active text
+      "tab.inactiveForeground": "#839496", // inactive tab text
+      "sideBar.foreground": "#839496", // sidebar text
+      "editorLineNumber.activeForeground": "#839496", // active line num
+      "editorLineNumber.foreground": "#839496", // line num
+      "editorCursor.foreground": "#839496", // cursor
+      "editor.foreground": "#839496", // editor text
+      "tab.activeForeground": "#839496", // active tab text
+      "editorIndentGuide.background": "#474747", // indent guide
+      "tab.inactiveBackground": "#474747", // inactive tab background
+      "tab.border": "#3f3f3f", // tab border
+      "list.inactiveSelectionBackground": "#474747", // list inactive background
+      "list.activeSelectionBackground": "#474747", // list onclick background
+      "editor.background": "#3f3f3f", // editor background
+      "sideBar.background": "#3f3f3f", // sidebar background
+      "tab.activeBackground": "#3f3f3f", // active tab background
+      "editorGroupHeader.tabsBackground": "#3f3f3f", // behind tabs background
+      "scrollbar.shadow": "#3f3f3f00", // scroll shadow
+      "list.focusOutline": "#3f3f3f00", // onclick outline
+      "list.hoverBackground": "#3f3f3f", // list hover background
+      "focusBorder": "#3f3f3f00" // focus border sidebar
+  }, 
 
-    "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#747452"
-    }, 
-
-    "breadcrumbs.enabled": false,
-    "editor.minimap.enabled": false,
-    "workbench.colorTheme": "CarbonightBlue",
-    "editor.guides.highlightActiveIndentation": false,
-    "editor.detectIndentation": false,
-    "editor.tabSize": 2,
-    "explorer.confirmDelete": false
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 2,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "workbench.colorTheme": "CarbonightBlue",
+  "workbench.iconTheme": null,
+  "workbench.tree.renderIndentGuides": "none"
 }
